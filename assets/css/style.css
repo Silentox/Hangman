@@ -1,0 +1,96 @@
+body{
+
+    font-family: tenoclock-reg;
+    background-image: url("../images/background.png");
+    background-size: 100% 100%;
+}
+
+
+#rope{
+
+    width:800px;
+    height:400px;
+    float:left;
+    position: relative;
+    top: 60px;
+    margin:0px;
+}
+/* 
+#stick{
+    width:600px;
+    height:300px;
+    position: relative;
+    right:565px;
+    top:-5px;
+} */
+
+#hint
+{
+    width:100px;
+height:100px;
+position: absolute;
+}
+
+#stats
+{
+width:100px;
+height:100px;
+position:absolute;
+top:50;
+right:50;
+}
+
+#stats span
+{
+    margin-top:20px; 
+    padding-left:10px; 
+    display:block;
+}
+summary
+{
+
+outline:none;
+
+}
+
+#optionDiv
+{
+left:900px;
+position: absolute;
+height:200px;
+width:200px;
+}
+
+
+
+#blanks
+{
+
+font-size:50px;
+
+position: relative;
+
+
+}
+
+li{
+    display:inline;
+}
+
+button{
+
+    background-color:transparent;
+    background-color:f5fffa;
+    width:60px;
+    font-family: tenoclock-reg;
+    height:25px;
+    margin:0.5px;;
+    border-style:solid;
+    outline:none;
+}
+@font-face {
+    font-family: tenoclock-reg;
+    src: url(tenoclock-reg.ttf);
+  }
+
+  
