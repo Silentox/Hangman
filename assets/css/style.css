@@ -1,11 +1,61 @@
+
 body{
 
     font-family: tenoclock-reg;
     background-image: url("../images/background.png");
     background-size: 100% 100%;
+    position: relative;
 }
 
+html, body{
+    min-height: 100%;
+  }
 
+
+  .overlay{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+    background-color: rgba(0,0,0,0); /*dim the background*/
+  }
+
+
+    #startGameButton
+    {
+        top:50px;
+        font-size: 16px;
+        left:50px;
+        width:100%;
+        position: relative;
+        display: inline-block;
+    }
+    
+    #topicSelectionButton
+    
+        {
+            top:70px;
+            left:50px;
+            width:100%;
+            position: relative;
+            display: inline-block;
+            background: rgba(255,255,255,0.8);
+            color:navy;     
+            font-size: 17px;  
+            outline: 0; 
+            border-color: #666; 
+            border-style: solid;
+            border-width: 0 0 2px 0;
+            cursor: pointer;
+            
+        }
+    
+        #selectionHighlight
+        {
+            font-size:12px;
+        }
 #rope{
 
     width:800px;
@@ -15,18 +65,11 @@ body{
     top: 60px;
     margin:0px;
 }
-/* 
-#stick{
-    width:600px;
-    height:300px;
-    position: relative;
-    right:565px;
-    top:-5px;
-} */
+
 
 #hint
 {
-    width:100px;
+width:100px;
 height:100px;
 position: absolute;
 }
@@ -65,9 +108,7 @@ width:200px;
 
 #blanks
 {
-
 font-size:50px;
-
 position: relative;
 
 

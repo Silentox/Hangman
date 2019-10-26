@@ -10,6 +10,21 @@
     </head>
     <body >
 
+        
+    <!-- if nulloption or undefined, require something else prior to submit -->
+        <div class="overlay">
+
+            <button id="startGameButton">Start</button>
+
+            <select id="topicSelectionButton">
+                    <option value="nullOption">Select Hangman Topic</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="basketball">Basketball Surnames</option>
+                    <option value="bookTitles">Book Titles</option>
+                  </select>
+        </div>
+            
+
     <ul id="blanks">
     </ul>
 
@@ -21,7 +36,6 @@
 
     <div id="picture">
         <img src="assets/images/firsttree.png" id="rope" alt="">
-        <!-- <img src="assets/images/banana.png", id="stick" alt=""> -->
 
     </div>
 
@@ -32,14 +46,6 @@
     <span id="killedBanana">Killed Banana:</span>
 </div>
 
-    <!-- TODO:
-
-        redirect to gameOver page once array is empty
-        gameOver page will have stats Div in center
-        
-        publish to github pages
-
-    -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/gameoverStyle.css" />
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+</head>
+<body>
+    
+
+
+
+    <h1>
+        GAME OVER! 
+    </h1>
+
+    <h2 id="sadBanana">
+        <img src="assets/images/sadbanana.png" alt="">
+    </h2> 
+  
+    <h3 id="restartGame">Try Again!</h3>
+    
+
+      <div id="stats">
+        <span id="killedBanana"></span>
+        <span id="savedBanana"></span>
+      </div>
+   
+
+    <script>
+
+  data=localStorage.getItem("storageName");
+$("#killedBanana").append("killed bananas: "+  data[2]);
+$("#savedBanana").append("Saved bananas:  "+  data[0]);
+if(data[3])
+{
+    $("#killedBanana").append(data[3]);
+}
+  $("#restartGame").on("click", function(){
+      window.close();
+      window.open("index.html");
+  })
+
+
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</body>
+</html>
