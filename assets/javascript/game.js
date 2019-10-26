@@ -122,7 +122,7 @@ document.addEventListener("click",function(){
     {     
         var sendData =[savedBanana, killedBanana];
         localStorage.setItem("storageName",sendData);
-        window.open("gameOver.html","_self");
+        window.open("gameover.html","_self");
     }
 
 })
